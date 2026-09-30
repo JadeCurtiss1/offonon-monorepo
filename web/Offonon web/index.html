@@ -253,7 +253,7 @@ contar o traer el equipo para levantar dicho contenido ya que si el estudio lo p
 tendrá un costo extra según el servicio.)
 </p>
 </div>
-            </div>
+</div>
         </div>
     </section>
 
@@ -263,7 +263,7 @@ tendrá un costo extra según el servicio.)
             <div class="flex flex-col md:flex-row items-center gap-8">
                 
                 <!-- Columna del Carrusel -->
-                <div class="md:w-1/2 mb-10 md:mb-0 w-full">
+                <div class="md:w-1/2 mb-10 md:mb-0 w-full flex flex-col gap-6">
                     
                     <!-- Contenedor del Carrusel Interactivo -->
                     <div class="relative w-full aspect-video sm:aspect-[4/3] rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer group transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(220,38,38,0.5)] active:scale-[1.01] active:shadow-[0_0_40px_rgba(220,38,38,0.7)]" tabindex="0">
@@ -271,48 +271,107 @@ tendrá un costo extra según el servicio.)
                         <!-- Capa de Fusión: Efecto de Brillo Rojo Interno -->
                         <div class="absolute inset-0 bg-red-600/0 mix-blend-color-dodge transition-all duration-500 group-hover:bg-red-600/30 group-active:bg-red-600/40 z-10 pointer-events-none"></div>
 
-                        <!-- Imagen 1 -->
-                        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        <!-- Imagen 1: Studio 1 -->
+                        <img src="offonon_studio1.jpeg"
                              loading="lazy" 
-                             alt="Equipamiento Principal" 
+                             alt="OFF ON ON - Studio 1" 
                              class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out opacity-100 z-0 group-hover:brightness-110 group-hover:contrast-115">
                         
-                        <!-- Imagen 2 -->
-                        <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        <!-- Imagen 2: Studio 2 -->
+                        <img src="offonon_studio2.jpeg"
                              loading="lazy" 
-                             alt="Detalle de Equipo 2" 
+                             alt="OFF ON ON - Studio 2" 
                              class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out opacity-0 -z-10 group-hover:brightness-110 group-hover:contrast-115">
                         
-                        <!-- Imagen 3 -->
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        <!-- Imagen 3: Studio 3 -->
+                        <img src="offonon_studio3.jpeg"
                              loading="lazy" 
-                             alt="Detalle de Equipo 3" 
+                             alt="OFF ON ON - Studio 3" 
                              class="carousel-img absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out opacity-0 -z-10 group-hover:brightness-110 group-hover:contrast-115">
+                    </div>
+
+                    <!-- Controles de Navegación Voluntaria -->
+                    <div class="flex justify-center items-center gap-8 md:gap-12 px-4">
+                        
+                        <!-- Botón Studio 1 -->
+                        <button type="button" class="carousel-btn group flex flex-col items-center gap-1.5 focus:outline-none cursor-pointer" data-index="0">
+                            <span class="btn-text text-red-500 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase transition-colors duration-300">Studio 1</span>
+                            <span class="btn-line h-[2px] w-full bg-red-600 shadow-[0_0_8px_rgba(220,38,38,0.8)] transition-all duration-500 ease-out"></span>
+                        </button>
+                        
+                        <!-- Botón Studio 2 -->
+                        <button type="button" class="carousel-btn group flex flex-col items-center gap-1.5 focus:outline-none cursor-pointer" data-index="1">
+                            <span class="btn-text text-gray-500 group-hover:text-gray-300 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase transition-colors duration-300">Studio 2</span>
+                            <span class="btn-line h-[2px] w-0 group-hover:w-1/2 bg-gray-400 transition-all duration-500 ease-out"></span>
+                        </button>
+                        
+                        <!-- Botón Studio 3 -->
+                        <button type="button" class="carousel-btn group flex flex-col items-center gap-1.5 focus:outline-none cursor-pointer" data-index="2">
+                            <span class="btn-text text-gray-500 group-hover:text-gray-300 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase transition-colors duration-300">Studio 3</span>
+                            <span class="btn-line h-[2px] w-0 group-hover:w-1/2 bg-gray-400 transition-all duration-500 ease-out"></span>
+                        </button>
+
                     </div>
                 </div>
 
-                <!-- Lógica del Carrusel (Pégalo justo aquí o al final del body) -->
+                <!-- Lógica de Control Temporal y Disipación Óptica -->
                 <script>
                     document.addEventListener("DOMContentLoaded", () => {
                         const images = document.querySelectorAll('.carousel-img');
-                        if (images.length === 0) return;
+                        const buttons = document.querySelectorAll('.carousel-btn');
+                        
+                        if (images.length === 0 || buttons.length === 0) return;
                         
                         let currentIndex = 0;
-                        
-                        setInterval(() => {
-                            // Enviar la imagen actual al fondo y desvanecerla
-                            images[currentIndex].classList.remove('opacity-100', 'z-0');
-                            images[currentIndex].classList.add('opacity-0', '-z-10');
+                        let intervalId;
+                        const cycleTime = 5000; // 5 segundos
+
+                        const switchTo = (newIndex) => {
+                            if (newIndex === currentIndex) return;
+
+                            // Colapso del estado activo anterior
+                            images[currentIndex].classList.replace('opacity-100', 'opacity-0');
+                            images[currentIndex].classList.replace('z-0', '-z-10');
                             
-                            // Calcular el índice de la siguiente imagen
-                            currentIndex = (currentIndex + 1) % images.length;
+                            const prevText = buttons[currentIndex].querySelector('.btn-text');
+                            const prevLine = buttons[currentIndex].querySelector('.btn-line');
                             
-                            // Traer la nueva imagen al frente y mostrarla
-                            images[currentIndex].classList.remove('opacity-0', '-z-10');
-                            images[currentIndex].classList.add('opacity-100', 'z-0');
-                        }, 5000); // Bucle exacto de 5 segundos
+                            prevText.className = 'btn-text text-gray-500 group-hover:text-gray-300 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase transition-colors duration-300';
+                            prevLine.className = 'btn-line h-[2px] w-0 group-hover:w-1/2 bg-gray-400 transition-all duration-500 ease-out';
+
+                            // Manifestación del nuevo estado seleccionado
+                            currentIndex = newIndex;
+                            
+                            images[currentIndex].classList.replace('opacity-0', 'opacity-100');
+                            images[currentIndex].classList.replace('-z-10', 'z-0');
+                            
+                            const currentText = buttons[currentIndex].querySelector('.btn-text');
+                            const currentLine = buttons[currentIndex].querySelector('.btn-line');
+                            
+                            currentText.className = 'btn-text text-red-500 text-xs sm:text-sm tracking-[0.25em] font-semibold uppercase transition-colors duration-300';
+                            currentLine.className = 'btn-line h-[2px] w-full bg-red-600 shadow-[0_0_8px_rgba(220,38,38,0.8)] transition-all duration-500 ease-out';
+                        };
+
+                        const startHeartbeat = () => {
+                            intervalId = setInterval(() => {
+                                const nextIndex = (currentIndex + 1) % images.length;
+                                switchTo(nextIndex);
+                            }, cycleTime);
+                        };
+
+                        buttons.forEach((btn, index) => {
+                            btn.addEventListener('click', () => {
+                                switchTo(index);
+                                clearInterval(intervalId);
+                                startHeartbeat();
+                            });
+                        });
+
+                        startHeartbeat();
                     });
                 </script>
+                
+                <!-- Aquí continúa la otra mitad de tu Equipment Section (md:w-1/2) -->
                 
                 <!-- Aquí continúa la otra mitad de tu Equipment Section (md:w-1/2) -->
                 <div class="md:w-1/2 md:pl-12">
