@@ -1,0 +1,2 @@
+Esta aplicacion en github llamado WACRM, fue forkeada para clonar y rebrandear, para soluciones visitar:
+https://github.com/ArnasDon/wacrm

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFONON STUDIO | Producción Musical y Estudio de Grabación Profesional</title>
+    <meta name="description" content="Estudio profesional de producción, mezcla y masterización. Equipo de alta gama y sonido de primer nivel para artistas y productores. ¡Reserva tu sesión hoy!">
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/groteska');
+        
+        /* Custom Cursor */
+        .cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: difference;
+            z-index: 9999;
+            transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+        }
+        
+        .cursor-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: #FF4239;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.2s ease;
+        }
+        
+        .cursor.hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        
+        .cursor.hover .cursor-dot {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #1A1A1A;
+            color: #F9F9F9;
+            overflow-x: hidden;
+            cursor: none;
+        }
+h1, h2, h3, h4, h5, h6 {
+            font-family: 'Groteska', sans-serif;
+            font-weight: bold;
+        }
+        
+        a {
+            color: #F9F9F9;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #FF4239;
+        }
+        
+        .btn-primary {
+            background-color: #FF4239;
+            color: #F9F9F9;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e6392e;
+        }
+        
+        .btn-outline {
+            border: 1px solid #FF4239;
+            color: #FF4239;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            background-color: #FF4239;
+            color: #F9F9F9;
+        }
+        
+        .icon-accent {
+            color: #FF4239;
+        }
+        
+        .card-bg {
+            background-color: #222222;
+        }
+</style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#1A1A1A] bg-opacity-95 backdrop-blur-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://huggingface.co/spaces/Gengar888/OffononDj2-Casi-listo/resolve/main/images/1000132086.png" alt="OFFONON Studio Logo" class="h-10 mr-2">
+                        <span class="text-xl font-bold text-white">OFFONON Studio</span>
+</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Equipo</a>
+                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Galería</a>
+                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+</div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-90">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipment</a>
+                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+
+<!-- Hero Section con Centrado Geométrico Absoluto y Video de Fondo -->
+<section class="relative min-h-screen flex items-center justify-center pt-16 bg-[#1A1A1A] hero-section overflow-hidden">
+
+    <!-- 1. Capa de Video de Fondo -->
+    <video autoplay loop muted playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
+        <source src="videos/offonon_web1.mp4" type="video/mp4">
+        Tu navegador no soporta video de fondo.
+    </video>
+
+    <!-- 2. Velo Oscuro (Overlay) para legibilidad -->
+    <div class="absolute inset-0 bg-[#1A1A1A] opacity-80 z-10 pointer-events-none"></div>
+
+    <!-- 3. Contenedor Frontal (Bloque Geométrico Centrado) -->
+    <!-- Usamos w-full para ocupar el ancho, y flex flex-col items-center justify-center para centrar todo su contenido -->
+    <div class="relative z-20 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center justify-center text-center space-y-10">
+        
+        <!-- Bloque de Texto (Agrupado para mantener el centrado) -->
+        <div class="flex flex-col items-center space-y-4">
+            <!-- Título Gigante (OFFONON) -->
+            <h1 class="text-5xl md:text-8xl font-extrabold text-white tracking-tight">
+                OFF<span class="text-[#FF4239]">ONON</span>
+            </h1>
+            
+            <!-- Subtítulo de Servicios (Alineado debajo) -->
+            <p class="text-xl md:text-2xl text-[#CCCCCC] max-w-2xl font-light tracking-wide leading-relaxed">
+                Dj / Mix & Master / Producción Musical / Foto / Video
+            </p>
+        </div>
+
+        <!-- Contenedor de Botones (Centrados entre sí y respecto al texto) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
+            <!-- Portal al Calendario (Abre en pestaña nueva) -->
+            <a href="https://n9.cl/xv3zun" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-4 rounded-full font-bold text-lg text-center inline-block transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,66,57,0.4)]">
+                Reservar Sesión
+            </a>
+            
+            <!-- Portal al Instagram (Abre en pestaña nueva) -->
+            <a href="https://www.instagram.com/offononclub/" target="_blank" rel="noopener noreferrer" class="btn-outline px-8 py-4 rounded-full font-bold text-lg text-center inline-block transition-all hover:bg-white hover:text-black">
+                Saber Más
+            </a>
+        </div>
+
+    </div>
+</section>
+    <!-- Services Section -->
+    <section class="py-20 bg-[#1A1A1A] services-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">NUESTROS <span class="text-[#FF4239]">SERVICIOS</span></h2>
+                <p class="text-[#CCCCCC] max-w-2xl mx-auto">Ofrecemos servicios completos de DJ y producción musical adaptados a tus necesidades</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-bg p-8 rounded-xl hover:bg-[#2A2A2A] transition duration-300 service-card">
+<div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 icon-accent">
+                        <i class="fas fa-music text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">DJ</h3><br>
+                    <p class="text-[#CCCCCC]">GRABACIÓN DE DJ SET<br><br><br><br>
+                        1 cámara frontal<br><br><br><br>
+                        2 cámaras (frontal + 360°)<br><br><br><br>
+                        3 cámaras (frontal + 360° + cámara en mano)<br><br><br><br>
+                        Solo práctica<br><br><br><br>
+                        Práctica + Grabación de audio<br><br><br><br>
+                    </p>
+                </div>
+                
+                <div class="card-bg p-8 rounded-xl hover:bg-[#2A2A2A] transition duration-300">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 icon-accent">
+                        <i class="fas fa-sliders-h text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">VOCAL PRODUCTION</h3>
+                    <p class="text-[#CCCCCC]">Convierte tus ideas en una producción profesional.
+                        Ya sea que tengas una canción escrita o solo una idea, en OffOnOn Studio te
+                        acompañamos durante todo el proceso de producción, desde el beat hasta el master final. <br><br>
+                    <h3 class="text-xl font-bold mb-3">SERVICIOS:</h3>
+                    <p class="text-[#CCCCCC]">🎵 Beat de Catálogo<br>
+                    🎼 Beat Personalizado / Remake<br>
+                    🎙️ Grabación Vocal<br>
+                    🎚️ Mezcla<br>
+                    💿 Master<br><br>
+                        <h3 class="text-xl font-bold mb-3">PAQUETES:</h3><br>
+                        <h3 class="text-xl font-bold mb-3">STARTER<br><br>
+                        <p class="text-[#CCCCCC]">Beat de Catálogo + Grabación + Mezcla + Master<br><br>
+                        <h3 class="text-xl font-bold mb-3">SIGNATURE<br><br>
+                        <p class="text-[#CCCCCC]">Beat Personalizado + Grabación + Mezcla + Master<br>
+                        
+
+</p>
+                </div>
+                
+                <div class="card-bg p-8 rounded-xl hover:bg-[#2A2A2A] transition duration-300">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 icon-accent">
+                        <i class="fas fa-headphones text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">MEMBRESÍAS</h3>
+                    <h3 class="text-xxl font-bold mb-3">CLUB OFFONON (OFF-MONTH PASS)</h3>
+                    <h3 class="text-xXXl font-bold mb-3">Beneficios de Membresía en OFF ON ON</h3>
+<p class="text-[#CCCCCC]">● Acceso a contenido exclusivo: Videos grabados y clases en vivo de la academia.<br>
+● Uso del estudio: Plug and play o DJBooth. Hasta 8 horas mensuales (2 horas por semana).<br>
+● Sesiones uno a uno Quincenal: Mentorías personalizadas con alguno de nuestros instructores.<br>
+● Descuento del 40% en cualquier servicio.<br> 
+● Accesos a nuestras diferentes actividades del estudio y master class mensuales.<br>
+● Acceso a camps exclusivos y Meet n Greet con artistas invitados consolidados en su escena.<br>
+● Descuento en Cafetería.<br>
+● 15% de Descuento Para renta de audio, sobre la cotización final de tu evento.<br>
+● 15% de descuento en cualquiera de nuestra merch.<br>
+● Premio de renovación.<br>
+● Espacio para levantar contenido (El espacio está abierto para sesión de fotos dentro de los
+espacios, creación de reels o bien algún otro contenido, pero es responsabilidad del socio,
+contar o traer el equipo para levantar dicho contenido ya que si el estudio lo presta, este
+tendrá un costo extra según el servicio.)
+</p>
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- Equipment Section -->
+    <section class="py-20 bg-[#1A1A1A] equipment-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+     loading="lazy" 
+alt="DJ Equipment" 
+                         class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">EQUIPO DE <span class="text-[#FF4239]">PRIMERA</span></h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mezclador Pioneer DJM-900NXS2</h3>
+                    <p class="text-[#CCCCCC] mb-8">Up to 15 stems -- $,2,000 MX (2629)<br>
+                        15 to 30 stems — $2,500 MX (3135)<br>
+                        31 to 45 stems — $3,000 MX (3843)<br>
+                        + than 45 stems — $3,500 MX (4551)<br>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mastering</h3>
+                    <p class="text-[#CCCCCC] mb-8">Stereo Mastering $1,000 MX (1112)
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mixdown & Mastering</h3>
+                        <p class="text-[#CCCCCC] mb-8">Up to 15 stems — $2,500 MX (2932)<br>
+                        16 to 30 stems — $3,000 MX (3438)<br>
+                        31 to 45 stems — $3,500 MX (4247)<br>
+                        + than 45 stems — $4,000 MX (4854)<br><br>
+                        En caso de que el artista decida asistir a la sesión de mezcla y master, esta tendrá un costo
+de $1,500 extra al costo del servicio.
+                    </p>
+                    <button class="mt-8 btn-primary px-6 py-3 rounded-full font-medium">
+Ver Lista Completa de Equipos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Spotify Players -->
+    <section class="py-20 bg-[#1A1A1A] spotify-section">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">NUESTRAS SELECCIONES<span class="text-[#FF4239]">EN SPOTIFY</span></h2>
+            <p class="text-[#CCCCCC] mb-12 max-w-2xl mx-auto">Escucha algunas de nuestras canciones y listas de reproducción favoritas.</p>
+<div class="space-y-8">
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/7m3dXROgAEKbvDqWiMfyWa?utm_source=generator&si=1a9e6c361c184136" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7aEIc6whqzfW5s06rLeQNr?utm_source=generator&si=d3904e1c9dcd4faf" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2RbCSjeZoLT0lYQvLzMLEV?utm_source=generator&si=760314ba6a1345e7" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-20 bg-[#1A1A1A] contact-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">RESERVA TU <span class="text-[#FF4239]">SESIÓN</span></h2>
+                <p class="text-[#CCCCCC] max-w-2xl mx-auto">¿Listo para crear algo increíble? Ponte en contacto con nosotros para reservar tiempo en el estudio.</p>
+</div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6 contact-form" id="contactForm">
+                        <div id="form-success" class="hidden text-center py-10">
+                            <h3 class="text-2xl font-bold text-[#FF4239] mb-4">¡Gracias por tu mensaje!</h3>
+                            <p class="text-white">Nos pondremos en contacto contigo pronto.</p>
+                        </div>
+                        <div id="form-fields">
+<div>
+                            <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Servicio Necesitado</label>
+                            <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white">
+                                <option>DJ Mixing</option>
+                                <option>Music Production</option>
+                                <option>Sound Engineering</option>
+                                <option>Equipment Rental</option>
+                            </select>
+                        </div>
+                        <!-- Clases Fields -->
+                        <div id="clases-fields" class="dynamic-field">
+                            <div>
+                                <label for="modalidad" class="block text-sm font-medium text-gray-300 mb-1">Modalidad</label>
+                                <select id="modalidad" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white">
+                                    <option>Presencial</option>
+                                    <option>En Línea</option>
+                                </select>
+                            </div>
+                            <div class="mt-4">
+                                <label for="fecha-hora" class="block text-sm font-medium text-gray-300 mb-1">Elige tu Fecha y Hora</label>
+                                <input type="datetime-local" id="fecha-hora" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="clases-nombre" class="block text-sm font-medium text-gray-300 mb-1">Tu Nombre</label>
+                                <input type="text" id="clases-nombre" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="clases-email" class="block text-sm font-medium text-gray-300 mb-1">Tu Email</label>
+                                <input type="email" id="clases-email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                        </div>
+
+                        <!-- Equipment Fields -->
+                        <div id="equipment-fields" class="dynamic-field">
+                            <div>
+                                <label for="equipo" class="block text-sm font-medium text-gray-300 mb-1">¿Qué Equipo Necesitas?</label>
+                                <input type="text" id="equipo" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="fecha-renta" class="block text-sm font-medium text-gray-300 mb-1">Fecha de Renta</label>
+                                <input type="date" id="fecha-renta" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="horas" class="block text-sm font-medium text-gray-300 mb-1">Número de Horas</label>
+                                <input type="number" id="horas" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="equipment-nombre" class="block text-sm font-medium text-gray-300 mb-1">Tu Nombre</label>
+                                <input type="text" id="equipment-nombre" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="equipment-email" class="block text-sm font-medium text-gray-300 mb-1">Tu Email</label>
+                                <input type="email" id="equipment-email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                        </div>
+
+                        <!-- Project Fields (for DJ Mixing, Music Production, Sound Engineering) -->
+                        <div id="project-fields" class="dynamic-field">
+                            <div>
+                                <label for="proyecto" class="block text-sm font-medium text-gray-300 mb-1">Cuéntanos sobre tu Proyecto</label>
+                                <textarea id="proyecto" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500"></textarea>
+                            </div>
+                            <div class="mt-4">
+                                <label for="project-nombre" class="block text-sm font-medium text-gray-300 mb-1">Tu Nombre</label>
+                                <input type="text" id="project-nombre" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                            <div class="mt-4">
+                                <label for="project-email" class="block text-sm font-medium text-gray-300 mb-1">Tu Email</label>
+                                <input type="email" id="project-email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-500">
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full btn-primary px-6 py-3 rounded-lg font-medium" id="submit-btn">
+Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <<div> 
+                        <div class="card-bg p-8 rounded-xl h-full">
+                          <h3 class="text-xl font-bold mb-6">INFORMACION DE CONTACTO</h3> 
+                          
+                          <div class="space-y-6"> 
+                            
+                            <!-- Ubicación -->
+                            <div class="flex items-start"> 
+                              <i class="fas fa-map-marker-alt text-[#FF4239] mt-1 mr-4"></i>
+                              <div> 
+                                <h4 class="font-medium">Ubicación del Estudio</h4> 
+                                <p class="text-[#CCCCCC]">Río Guadalquivir 66, Cuauhtémoc, 06500 Ciudad de México, CDMX</p>
+                                <div class="mt-4"> 
+                                  <iframe 
+                                    src="https://maps.google.com/maps?q=Río%20Guadalquivir%2066,%20Cuauhtémoc,%2006500%20Ciudad%20de%20México,%20CDMX&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                    width="100%" 
+                                    height="450" 
+                                    style="border:0; border-radius: 0.5rem;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                  </iframe>
+                                </div> 
+                              </div> 
+                            </div> 
+                      
+                            <!-- Teléfono -->
+                            <div class="flex items-start"> 
+                              <i class="fas fa-phone-alt text-[#FF4239] mt-1 mr-4"></i>
+                              <div> 
+                                <h4 class="font-medium">Número de Teléfono</h4> 
+                                <p class="text-[#CCCCCC]">+52 56 1284 0939</p>
+                              </div> 
+                            </div> 
+                      
+                            <!-- Correo -->
+                            <div class="flex items-start"> 
+                              <i class="fas fa-envelope text-[#FF4239] mt-1 mr-4"></i>
+                              <div> 
+                                <h4 class="font-medium">Correo Electrónico</h4> 
+                                <p class="text-[#CCCCCC]">offononstudio@gmail.com</p>
+                              </div> 
+                            </div> 
+                      
+                            <!-- Horario -->
+                            <div class="flex items-start"> 
+                              <i class="fas fa-clock text-[#FF4239] mt-1 mr-4"></i>
+                              <div> 
+                                <h4 class="font-medium">Horario de Trabajo</h4> 
+                                <p class="text-[#CCCCCC]">Lunes - Jueves: 10AM - 10 PM<br>Viernes - Sabado: 10 AM - 11 PM<br>Domingo: 10 AM - 6 PM</p>
+                              </div> 
+                            </div> 
+                            
+                          </div> 
+                          
+                          <div class="mt-8"> 
+                            <h4 class="font-medium mb-4">SÍGUENOS</h4> 
+                          </div>
+                        </div>
+                      </div>
+                                       
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center hover:bg-[#FF4239] transition duration-300">
+<i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                                    <i class="fab fa-soundcloud"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="https://huggingface.co/spaces/Gengar888/OffononDj2-Casi-listo/resolve/main/images/1000132086.png" alt="OFFONON Studio Logo" class="h-10 mr-2">
+                    <span class="text-xl font-bold text-white">OFFONON Studio</span>
+                </div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Inicio</a>
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Servicios</a>
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Equipo</a>
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Galería</a>
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Contacto</a>
+                    <a href="#" class="text-[#CCCCCC] hover:text-[#FF4239]">Política de Privacidad</a>
+</div>
+                <div class="text-[#CCCCCC] text-sm">
+&copy; 2023 OFFONON Studio DJ. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Scroll Reveal Animations */
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Social Media Sidebar */
+        .social-sidebar {
+            position: fixed;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 15px 10px;
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px 0 0 10px;
+            z-index: 100;
+            transition: right 0.5s ease 1s;
+        }
+
+        .social-sidebar.visible {
+            right: 0;
+        }
+
+        .social-icon {
+            color: #F9F9F9;
+            font-size: 24px;
+            transition: all 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: #FF4239;
+        }
+
+        /* Hero Animation */
+        .hero-content h1 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .hero-content p, .hero-content .buttons {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+        }
+
+        .hero-image {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .hero-animated .hero-content h1,
+        .hero-animated .hero-content p,
+        .hero-animated .hero-content .buttons {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-animated .hero-image {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Services Animation */
+        .service-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .services-reveal .service-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+        .services-reveal .service-card:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+        .services-reveal .service-card:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .services-reveal .service-card {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Equipment Animation */
+        .equipment-item {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .equipment-reveal .equipment-item {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .equipment-reveal .equipment-item:nth-child(1) { transition-delay: 0.1s; }
+        .equipment-reveal .equipment-item:nth-child(2) { transition-delay: 0.2s; }
+        .equipment-reveal .equipment-item:nth-child(3) { transition-delay: 0.3s; }
+        .equipment-reveal .equipment-item:nth-child(4) { transition-delay: 0.4s; }
+
+        /* Spotify Animation */
+        .spotify-header {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .spotify-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .spotify-reveal .spotify-header {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .spotify-reveal .spotify-item:nth-child(1) { transition-delay: 0.2s; }
+        .spotify-reveal .spotify-item:nth-child(2) { transition-delay: 0.3s; }
+        .spotify-reveal .spotify-item:nth-child(3) { transition-delay: 0.4s; }
+
+        .spotify-reveal .spotify-item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Contact Animation */
+        .contact-form {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .contact-info {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .contact-reveal .contact-form,
+        .contact-reveal .contact-info {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Global Hover Effects */
+        a, button, .btn-primary, .btn-outline, .social-icon {
+            transition: all 0.2s ease;
+        }
+
+        a:hover, button:hover, .btn-primary:hover, .btn-outline:hover {
+            filter: drop-shadow(0 0 5px rgba(255, 66, 57, 0.7));
+        }
+/* Dynamic Form Fields */
+        .dynamic-field {
+            display: none;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, height 0.3s ease;
+        }
+
+        .dynamic-field[style*="display: block"] {
+            opacity: 1;
+            height: auto;
+        }
+    </style>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+    </div>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dynamic Form Fields
+        function showFields(service) {
+            // Hide all fields first
+            document.querySelectorAll('.dynamic-field').forEach(field => {
+                field.style.display = 'none';
+            });
+
+            // Show relevant fields based on selection
+            if (service === 'Clases') {
+                document.getElementById('clases-fields').style.display = 'block';
+            } else if (service === 'Equipment rental') {
+                document.getElementById('equipment-fields').style.display = 'block';
+            } else {
+                document.getElementById('project-fields').style.display = 'block';
+            }
+        }
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorDot = document.querySelector('.cursor-dot');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .btn-primary, .btn-outline, input[type="submit"], .social-icon').forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        });
+
+        // Scroll Reveal Animations
+        function checkScroll() {
+            const sections = document.querySelectorAll('section');
+            const windowHeight = window.innerHeight;
+            const windowTop = window.scrollY;
+            const windowBottom = windowTop + windowHeight;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (sectionBottom >= windowTop && sectionTop <= windowBottom) {
+                    section.classList.add('reveal');
+
+                    // Section-specific animations
+                    if (section.classList.contains('hero-section')) {
+                        section.classList.add('hero-animated');
+                    } else if (section.classList.contains('services-section')) {
+                        section.classList.add('services-reveal');
+                    } else if (section.classList.contains('equipment-section')) {
+                        section.classList.add('equipment-reveal');
+                    } else if (section.classList.contains('spotify-section')) {
+                        section.classList.add('spotify-reveal');
+                    } else if (section.classList.contains('contact-section')) {
+                        section.classList.add('contact-reveal');
+                    }
+                }
+            });
+        }
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            document.getElementById('form-fields').style.display = 'none';
+            document.getElementById('form-success').classList.remove('hidden');
+            
+            // Reset form after 5 seconds
+            setTimeout(() => {
+                document.getElementById('form-fields').style.display = 'block';
+                document.getElementById('form-success').classList.add('hidden');
+                this.reset();
+            }, 5000);
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showFields(document.getElementById('service').value);
+            
+            // Add smooth transition effect
+            document.querySelectorAll('.dynamic-field').forEach(field => {
+                field.style.transition = 'opacity 0.3s ease, height 0.3s ease';
+            });
+
+            // Show social sidebar after delay
+            setTimeout(() => {
+                document.querySelector('.social-sidebar').classList.add('visible');
+            }, 1000);
+
+            // Initial scroll check
+            checkScroll();
+        });
+
+        // Check scroll on scroll
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('resize', checkScroll);
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        } else {
+            // Fallback for browsers that don't support loading="lazy"
+            const lazyLoad = function() {
+                const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+                
+                lazyImages.forEach(img => {
+                    if (img.getBoundingClientRect().top < window.innerHeight + 200) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('loading');
+                    }
+                });
+            };
+
+            document.addEventListener('scroll', lazyLoad);
+            window.addEventListener('resize', lazyLoad);
+            window.addEventListener('orientationchange', lazyLoad);
+            lazyLoad();
+        }
+    </script>

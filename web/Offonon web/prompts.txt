@@ -1,0 +1,200 @@
+Act as an expert web developer and UI/UX designer.
+Your task is to perform several detailed modifications to the current webpage. Please follow these instructions precisely and in order:
+Part 1: Global Text Replacement
+Find all instances of the text "Offonon" and replace them with "Offonon Studio".
+Part 2: Animated Social Media Sidebar
+2. Create a fixed social media sidebar on the right side of the page. It must remain visible as the user scrolls.
+3. The sidebar should contain these icons, stacked vertically: WhatsApp, Instagram, Facebook, Spotify.
+4. Implement two animations for the icons:
+* Entrance Animation: When the page loads, the icons should have a subtle "slide-in from the right" animation effect.
+* Hover Animation: When the user's cursor hovers over an icon, it should slightly grow in size to indicate it's interactive.
+5. Each icon must be a clickable link with a placeholder URL (e.g., href="#").
+Part 3: Advanced Dynamic Form
+6. Locate the form in the lower section of the page.
+7. In its dropdown selection menu, add a new option for "Clases".
+8. Implement dynamic functionality based on the user's selection. Below is the exact list of fields that should appear for each choice. Only the fields for the selected category should be visible at any time.
+code
+Code
+*   **If "Clases" is selected, show these fields:**
+    *   `Modalidad` (Dropdown with options: "Presencial", "En Línea")
+    *   `Elige tu Fecha y Hora` (A date and time picker for booking)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "Equipment rental" is selected, show these fields:**
+    *   `¿Qué Equipo Necesitas?` (Text input)
+    *   `Fecha de Renta` (A date picker)
+    *   `Número de Horas` (A number input)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "DJ Mixing", "Music production", or "Sound Engineer" is selected, show these fields:**
+    *   `Cuéntanos sobre tu Proyecto` (A large text area for details)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+Part 4: Language Translation
+9. Translate all English text on the entire page to Spanish. This includes all titles, headings, button labels, and the new form field labels from Part 3.
+Final Requirements:
+Preserve the overall dark theme and style.
+All new elements and animations must integrate seamlessly.
+Ensure the page remains fully responsive.
+Proceed with all modifications.
+Act as an expert web developer and UI/UX designer.
+Your task is to perform several detailed modifications to the current webpage. Please follow these instructions precisely and in order:
+Part 1: Global Text Replacement
+Find all instances of the text "Offonon" and replace them with "Offonon Studio".
+Part 2: Animated Social Media Sidebar
+2. Create a fixed social media sidebar on the right side of the page. It must remain visible as the user scrolls.
+3. The sidebar should contain these icons, stacked vertically: WhatsApp, Instagram, Facebook, Spotify.
+4. Implement two animations for the icons:
+* Entrance Animation: When the page loads, the icons should have a subtle "slide-in from the right" animation effect.
+* Hover Animation: When the user's cursor hovers over an icon, it should slightly grow in size to indicate it's interactive.
+5. Each icon must be a clickable link with a placeholder URL (e.g., href="#").
+Part 3: Advanced Dynamic Form
+6. Locate the form in the lower section of the page.
+7. In its dropdown selection menu, add a new option for "Clases".
+8. Implement dynamic functionality based on the user's selection. Below is the exact list of fields that should appear for each choice. Only the fields for the selected category should be visible at any time.
+code
+Code
+*   **If "Clases" is selected, show these fields:**
+    *   `Modalidad` (Dropdown with options: "Presencial", "En Línea")
+    *   `Elige tu Fecha y Hora` (A date and time picker for booking)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "Equipment rental" is selected, show these fields:**
+    *   `¿Qué Equipo Necesitas?` (Text input)
+    *   `Fecha de Renta` (A date picker)
+    *   `Número de Horas` (A number input)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "DJ Mixing", "Music production", or "Sound Engineer" is selected, show these fields:**
+    *   `Cuéntanos sobre tu Proyecto` (A large text area for details)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+Part 4: Language Translation
+9. Translate all English text on the entire page to Spanish. This includes all titles, headings, button labels, and the new form field labels from Part 3.
+Final Requirements:
+Preserve the overall dark theme and style.
+All new elements and animations must integrate seamlessly.
+Ensure the page remains fully responsive.
+Proceed with all modifications.
+Act as an expert web developer and UI/UX designer.
+Your task is to perform several detailed modifications to the current webpage. Please follow these instructions precisely and in order:
+Part 1: Global Text Replacement
+Find all instances of the text "Offonon" and replace them with "Offonon Studio".
+Part 2: Animated Social Media Sidebar
+2. Create a fixed social media sidebar on the right side of the page. It must remain visible as the user scrolls.
+3. The sidebar should contain these icons, stacked vertically: WhatsApp, Instagram, Facebook, Spotify.
+4. Implement two animations for the icons:
+* Entrance Animation: When the page loads, the icons should have a subtle "slide-in from the right" animation effect.
+* Hover Animation: When the user's cursor hovers over an icon, it should slightly grow in size to indicate it's interactive.
+5. Each icon must be a clickable link with a placeholder URL (e.g., href="#").
+Part 3: Advanced Dynamic Form
+6. Locate the form in the lower section of the page.
+7. In its dropdown selection menu, add a new option for "Clases".
+8. Implement dynamic functionality based on the user's selection. Below is the exact list of fields that should appear for each choice. Only the fields for the selected category should be visible at any time.
+code
+Code
+*   **If "Clases" is selected, show these fields:**
+    *   `Modalidad` (Dropdown with options: "Presencial", "En Línea")
+    *   `Elige tu Fecha y Hora` (A date and time picker for booking)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "Equipment rental" is selected, show these fields:**
+    *   `¿Qué Equipo Necesitas?` (Text input)
+    *   `Fecha de Renta` (A date picker)
+    *   `Número de Horas` (A number input)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "DJ Mixing", "Music production", or "Sound Engineer" is selected, show these fields:**
+    *   `Cuéntanos sobre tu Proyecto` (A large text area for details)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+Act as an expert web developer and UI/UX designer.
+Your task is to perform several detailed modifications to the current webpage. Please follow these instructions precisely and in order:
+Part 1: Global Text Replacement
+Find all instances of the text "Offonon" and replace them with "Offonon Studio".
+Part 2: Animated Social Media Sidebar
+2. Create a fixed social media sidebar on the right side of the page. It must remain visible as the user scrolls.
+3. The sidebar should contain these icons, stacked vertically: WhatsApp, Instagram, Facebook, Spotify.
+4. Implement two animations for the icons:
+* Entrance Animation: When the page loads, the icons should have a subtle "slide-in from the right" animation effect.
+* Hover Animation: When the user's cursor hovers over an icon, it should slightly grow in size to indicate it's interactive.
+5. Each icon must be a clickable link with a placeholder URL (e.g., href="#").
+Part 3: Advanced Dynamic Form
+6. Locate the form in the lower section of the page.
+7. In its dropdown selection menu, add a new option for "Clases".
+8. Implement dynamic functionality based on the user's selection. Below is the exact list of fields that should appear for each choice. Only the fields for the selected category should be visible at any time.
+code
+Code
+*   **If "Clases" is selected, show these fields:**
+    *   `Modalidad` (Dropdown with options: "Presencial", "En Línea")
+    *   `Elige tu Fecha y Hora` (A date and time picker for booking)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "Equipment rental" is selected, show these fields:**
+    *   `¿Qué Equipo Necesitas?` (Text input)
+    *   `Fecha de Renta` (A date picker)
+    *   `Número de Horas` (A number input)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+*   **If "DJ Mixing", "Music production", or "Sound Engineer" is selected, show these fields:**
+    *   `Cuéntanos sobre tu Proyecto` (A large text area for details)
+    *   `Tu Nombre` (Text input)
+    *   `Tu Email` (Email input)
+
+Final Requirements:
+Preserve the overall dark theme and style.
+All new elements and animations must integrate seamlessly.
+Ensure the page remains fully responsive.
+Proceed with all modifications.
+Act as an expert web developer specializing in dynamic frontend forms.
+Your task is to perform a specific and detailed modification to the contact/booking form on the current webpage.
+Please follow these instructions with precision:
+First, locate the form located in the lower section of the page.
+In its dropdown selection menu, add a new option for "Clases". The complete list of options in the menu should now be: "DJ Mixing", "Music production", "Sound Engineer", "Equipment rental", and the new "Clases" option.
+Next, you must implement dynamic functionality for this form. The input fields displayed below the dropdown should change instantly based on the user's selection.
+Here is the exact list of fields that must appear for each specific choice. Only the fields for the selected category should be visible at any given time.
+If the user selects "Clases", show these fields:
+Modalidad (This should be a dropdown menu with two options: "Presencial" and "En Línea")
+Elige tu Fecha y Hora (This should be a date and time picker for booking)
+Tu Nombre (Standard text input)
+Tu Email (Standard email input)
+If the user selects "Equipment rental", show these fields:
+¿Qué Equipo Necesitas? (Standard text input)
+Fecha de Renta (A date picker)
+Número de Horas (A number input)
+Tu Nombre (Standard text input)
+Tu Email (Standard email input)
+If the user selects "DJ Mixing", "Music production", or "Sound Engineer", show these fields:
+Cuéntanos sobre tu Proyecto (A large text area for detailed descriptions)
+Tu Nombre (Standard text input)
+Tu Email (Standard email input)
+Final Requirements:
+The styling of the new form fields must perfectly match the existing design of the page.
+The form must remain fully responsive and functional on mobile devices.
+The transition between the sets of fields should be smooth.
+Proceed with the form modification.
+In the lower section, in the "Book your session" section, erase the part that is duplicated, there are two fields that are repeated, the first one is "Tu nombre", and the second one is "Tu Email".
+In contact info replace the text shown there, with the next text for the next sections:
+
+Studio Location:
+Yautepec 2, Condesa CDMX
+
+Email Adress:
+offononstudio@gmail.com
+
+Working Hours
+Monday - Saturday: 10AM - 10PM
+Sunday: Closed
+
+
+For the direction listed "Yautepec 2, Condesa", add a google maps  section, showing the exact adrees in a window.
+Translate all the text from english to spanish.
+Translate all of the text from english to spanish.

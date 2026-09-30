@@ -1,0 +1,67 @@
+NEXT_PUBLIC_SUPABASE_URL
+
+
+https://twaklgiqcnjobrjpvjnp.supabase.co
+Production
+Added 
+1d ago
+
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3YWtsZ2lxY25qb2JyanB2am5wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAxMTk3ODgsImV4cCI6MjEwNTY5NTc4OH0.Wsc8I9jweuZjfpQ-ysgUtV0yvN2b22nGJSyH_CmvBQ8
+Production
+Added 
+1d ago
+
+
+SUPABASE_SE…CE_ROLE_KEY
+Needs Attention
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3YWtsZ2lxY25qb2JyanB2am5wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MDExOTc4OCwiZXhwIjoyMTA1Njk1Nzg4fQ.p21fm4I8hXp02yJyJI9R8Jl8A44DT_Z8F_TRGO5SK4I
+Production
+Added 
+1d ago
+
+
+ENCRYPTION_KEY
+Needs Attention
+
+
+2d92f8492235623f7dd32bae47dcf18ea43b280584f3e27db259f55e8139180c
+Production
+Added 
+1d ago
+
+
+META_APP_SECRET
+Needs Attention
+
+
+225b3d8b428ee8a7ad4417db6c8b996e
+Production
+Added 
+1d ago
+
+
+NEXT_PUBLIC_APP_LOCALE
+
+
+es
+Production
+Added 
+1d ago
+
+
+NEXT_PUBLIC_SITE_URL
+
+
+https://whatsia-ten.vercel.app/
+Production
+Added 
+1d ago
+
+
+Enable access to System Environment Variables
