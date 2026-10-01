@@ -109,11 +109,11 @@ h1, h2, h3, h4, h5, h6 {
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-4">
-                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
-                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Equipo</a>
-                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Galería</a>
-                        <a href="#" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                        <a href="#inicio" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="#servicios" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                        <a href="#equipo" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Equipo</a>
+                        <a href="#galeria" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Galería</a>
+                        <a href="#contacto" class="text-[#F9F9F9] hover:text-[#FF4239] px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
 </div>
                 </div>
                 <div class="md:hidden">
@@ -127,11 +127,11 @@ h1, h2, h3, h4, h5, h6 {
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-90">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipment</a>
-                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-                <a href="#" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#inicio" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#servicios" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#equipo" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipment</a>
+                <a href="#galeria" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#contacto" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     </div>
 
 <!-- Hero Section con Centrado Geométrico Absoluto y Video de Fondo -->
-<section class="relative min-h-screen flex items-center justify-center pt-16 bg-[#1A1A1A] hero-section overflow-hidden">
+<section id="inicio" class="relative min-h-screen flex items-center justify-center pt-16 bg-[#1A1A1A] hero-section overflow-hidden">
 
     <!-- 1. Capa de Video de Fondo -->
     <video autoplay loop muted playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
@@ -170,7 +170,15 @@ h1, h2, h3, h4, h5, h6 {
         </div>
 
         <!-- Contenedor de Botones (Centrados entre sí y respecto al texto) -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+    <a href="#inicio" class="text-[#CCCCCC] hover:text-[#FF4239]">Inicio</a>
+    <a href="#servicios" class="text-[#CCCCCC] hover:text-[#FF4239]">Servicios</a>
+    <a href="#equipo" class="text-[#CCCCCC] hover:text-[#FF4239]">Equipo</a>
+    <a href="#galeria" class="text-[#CCCCCC] hover:text-[#FF4239]">Galería</a>
+    <a href="#contacto" class="text-[#CCCCCC] hover:text-[#FF4239]">Contacto</a>
+    <!-- Política de Privacidad: pega tu enlace en href (reemplaza PEGA_AQUI_TU_LINK) -->
+    <a href="PEGA_AQUI_TU_LINK" target="_blank" rel="noopener noreferrer" class="text-[#CCCCCC] hover:text-[#FF4239]">Política de Privacidad</a>
+</div>
             <!-- Portal al Calendario (Abre en pestaña nueva) -->
             <a href="https://n9.cl/xv3zun" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-4 rounded-full font-bold text-lg text-center inline-block transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,66,57,0.4)]">
                 Reservar Sesión
@@ -185,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     </div>
 </section>
     <!-- Services Section -->
-    <section class="py-20 bg-[#1A1A1A] services-section">
+    <section id="servicios" class="py-20 bg-[#1A1A1A] services-section">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">NUESTROS <span class="text-[#FF4239]">SERVICIOS</span></h2>
@@ -258,7 +266,7 @@ tendrá un costo extra según el servicio.)
     </section>
 
 <!-- Equipment Section -->
-<section class="py-20 bg-[#1A1A1A] equipment-section">
+<section id="equipo" class="py-20 bg-[#1A1A1A] equipment-section">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center gap-8">
 
@@ -456,9 +464,9 @@ tendrá un costo extra según el servicio.)
         </div>
     </section>
     <!-- Spotify Players -->
-    <section class="py-20 bg-[#1A1A1A] spotify-section">
+    <section id="spotify" class="py-20 bg-[#1A1A1A] spotify-section">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">NUESTRAS SELECCIONES<span class="text-[#FF4239]">EN SPOTIFY</span></h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">NUESTRAS SELECCIONES<span class="text-[#FF4239]"> EN SPOTIFY</span></h2>
             <p class="text-[#CCCCCC] mb-12 max-w-2xl mx-auto">Escucha algunas de nuestras canciones y listas de reproducción favoritas.</p>
 <div class="space-y-8">
     <!-- Playlist oculta temporalmente (Tao) - dejar espacio para editar el link después
@@ -472,7 +480,7 @@ tendrá un costo extra según el servicio.)
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="py-20 bg-[#1A1A1A] contact-section">
+    <section id="contacto" class="py-20 bg-[#1A1A1A] contact-section">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">RESERVA TU <span class="text-[#FF4239]">SESIÓN</span></h2>
@@ -547,7 +555,7 @@ tendrá un costo extra según el servicio.)
                           </div> 
                           
                           <div class="mt-8"> 
-                            <h4 class="font-medium mb-4">SÍGUENOS</h4> 
+                            <h4 class="font-medium mb-4">SÍGUENOS TKM YAZ</h4> 
                           </div>
                         </div>
                       </div>
